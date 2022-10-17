@@ -32,7 +32,7 @@
         android:layout_marginStart="29dp"
         android:fontFamily="@font/roboto"
         android:paddingStart="0dp"
-        android:text=" SN: 2022-38924"
+        android:text="SN: 2022-38924"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -68,10 +68,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.199" />
 
     <TextView
         android:id="@+id/txtBatch"
@@ -87,7 +87,7 @@
         app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCourse"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtSection"
@@ -103,7 +103,7 @@
         app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBatch"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/horizontalDivider1"

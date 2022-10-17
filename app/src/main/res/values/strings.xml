@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Student Assistance App</string>
+    <string name="app_name">app one</string>
+    <string name="login">Log in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="linked_in_sign_in">Linked In Sign In</string>
+    <string name="google_sign_in">Google Sign In</string>
+    <string name="facebook_sign_in">Facebook Sign In</string>
+    <string name="no_account_sign_up">No Account? Sign Up</string>
+    <string name="helper_text">This is a helper text.</string>
 </resources>
