@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluetop"
+    android:background="@drawable/bluetopbckground"
     tools:context=".StudentAppHomeScreen">
+
 
     <TextView
         android:id="@+id/textViewHomeName"
@@ -15,7 +16,7 @@
         android:paddingStart="0dp"
         android:text="Hello Paul!"
         android:textAlignment="textStart"
-        android:textColor="@color/white"
+        android:textColor="@color/material_dynamic_neutral99"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <TextView
         android:id="@+id/textView6"
@@ -34,8 +35,8 @@
         android:paddingStart="0dp"
         android:text="SN: 2022-38924"
         android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textColor="@color/material_dynamic_neutral99"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.011"
@@ -48,6 +49,7 @@
         android:layout_width="97dp"
         android:layout_height="93dp"
         android:contentDescription="studentPhoto"
+        android:foreground="@drawable/saitama"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,30 +66,14 @@
         android:fontFamily="@font/roboto"
         android:text="Major in Software Development"
         android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textColor="@color/material_dynamic_neutral_variant100"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
-
-    <TextView
-        android:id="@+id/txtBatch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="Batch 2022"
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCourse"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.187" />
 
     <TextView
         android:id="@+id/txtSection"
@@ -96,34 +82,73 @@
         android:fontFamily="@font/roboto"
         android:text="Section A"
         android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textColor="@color/material_dynamic_neutral_variant100"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBatch"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.001" />
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/horizontalDivider1"
+    <TextView
+        android:id="@+id/txtBatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="230dp" />
+        android:fontFamily="@font/roboto"
+        android:text="Batch 2022"
+        android:textAlignment="textStart"
+        android:textColor="@color/material_dynamic_neutral_variant100"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCourse"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabStudApp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Tabs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSection"
+        app:layout_constraintVertical_bias="0.118"
+        app:tabIndicator="@android:color/transparent"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabPaddingEnd="15dp"
+        app:tabPaddingStart="15dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_label_1"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="245dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_label_2"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="247dp" />
+    </com.google.android.material.tabs.TabLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

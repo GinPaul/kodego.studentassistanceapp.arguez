@@ -9,4 +9,7 @@
     <string name="facebook_sign_in">Facebook Sign In</string>
     <string name="no_account_sign_up">No Account? Sign Up</string>
     <string name="helper_text">This is a helper text.</string>
+    <string name="text_label_1">GWA 1.25</string>
+    <string name="text_label_2">2nd Semester</string>
+    <string name="log_in">Log in</string>
 </resources>
