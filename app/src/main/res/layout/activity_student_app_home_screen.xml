@@ -4,15 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluetopbckground"
-    tools:context=".StudentAppHomeScreen">
+    android:background="@drawable/purpletop">
 
+
+<!--    &lt;!&ndash;        app:civ_border_color="#FF000000"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:civ_border_width="2dp"&ndash;&gt;<![CDATA[-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.05"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.187" />-->
+
+
+
+
+
+<!--    ]]>-->
 
     <TextView
         android:id="@+id/textViewHomeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="sans-serif-medium"
         android:paddingStart="0dp"
         android:text="Hello Paul!"
         android:textAlignment="textStart"
@@ -21,43 +35,39 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvStudentNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="sans-serif-medium"
         android:paddingStart="0dp"
         android:text="SN: 2022-38924"
         android:textAlignment="textStart"
-        android:textColor="@color/material_dynamic_neutral99"
+        android:textColor="#F9FAFA"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewHomeName"
         app:layout_constraintTop_toBottomOf="@+id/textViewHomeName"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="97dp"
-        android:layout_height="93dp"
-        android:contentDescription="studentPhoto"
-        android:foreground="@drawable/saitama"
-        android:scaleType="fitCenter"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/paul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.025"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/txtCourse"
@@ -66,12 +76,13 @@
         android:fontFamily="@font/roboto"
         android:text="Major in Software Development"
         android:textAlignment="textStart"
-        android:textColor="@color/material_dynamic_neutral_variant100"
+        android:textColor="@color/darkblue"
         android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.187" />
 
@@ -82,14 +93,15 @@
         android:fontFamily="@font/roboto"
         android:text="Section A"
         android:textAlignment="textStart"
-        android:textColor="@color/material_dynamic_neutral_variant100"
+        android:textColor="@color/darkblue"
         android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtBatch"
         app:layout_constraintTop_toBottomOf="@+id/txtBatch"
-        app:layout_constraintVertical_bias="0.001" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtBatch"
@@ -98,12 +110,13 @@
         android:fontFamily="@font/roboto"
         android:text="Batch 2022"
         android:textAlignment="textStart"
-        android:textColor="@color/material_dynamic_neutral_variant100"
+        android:textColor="#010D53"
         android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.395"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCourse"
         app:layout_constraintTop_toBottomOf="@+id/txtCourse"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -120,7 +133,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSection"
-        app:layout_constraintVertical_bias="0.118"
+        app:layout_constraintVertical_bias="0.063"
         app:tabIndicator="@android:color/transparent"
         app:tabIndicatorColor="@android:color/transparent"
         app:tabPaddingEnd="15dp"
@@ -139,16 +152,75 @@
             android:layout_height="wrap_content"
             android:text="@string/text_label_2"
             tools:ignore="TouchTargetSizeCheck"
-            tools:layout_editor_absoluteX="204dp"
-            tools:layout_editor_absoluteY="247dp" />
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="219dp" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="TouchTargetSizeCheck"
-            tools:layout_editor_absoluteX="204dp"
-            tools:layout_editor_absoluteY="247dp" />
+            tools:layout_editor_absoluteX="268dp"
+            tools:layout_editor_absoluteY="231dp" />
     </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's Schedule:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabStudApp"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scheduleCardview"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/imgCalendarButton1"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="studentcalendar"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleCardview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.014"
+        app:srcCompat="@drawable/calendar2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvDateToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Date Today"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHomeName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toEndOf="@+id/textViewHomeName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
