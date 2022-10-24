@@ -43,7 +43,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
 
         textView = findViewById(R.id.tvDateToday)
         calendar = Calendar.getInstance()
-        simpleDateFormat = SimpleDateFormat("MM-dd-yyyy")
+        simpleDateFormat = SimpleDateFormat("EEE | MMM dd, yyyy")
         date = simpleDateFormat.format(calendar.time)
         textView.text = date
 
@@ -62,18 +62,19 @@ class StudentAppHomeScreen : AppCompatActivity() {
 
 
 
-//            fun addCalendarEvent(view: View) {
-//                val calendarEvent: Calendar = Calendar.getInstance()
-//                val intent = Intent(Intent.ACTION_EDIT)
-//                intent.type = "vnd.android.cursor.item/event"
-//                intent.putExtra("beginTime", calendarEvent.timeInMillis)
-//                intent.putExtra("allDay", true)
-//                intent.putExtra("rule", "FREQ=YEARLY")
-//                intent.putExtra("endTime", calendarEvent.timeInMillis + 60 * 60 * 1000)
-//                intent.putExtra("title", "Calendar Event")
-//                startActivity(intent)
+//        fun addCalendarEvent(view: View) {
+//            val calendarEvent: Calendar = Calendar.getInstance()
+//            val intent = Intent(Intent.ACTION_EDIT)
+//            intent.type = "vnd.android.cursor.item/event"
+//            intent.putExtra("beginTime", calendarEvent.timeInMillis)
+//            intent.putExtra("allDay", true)
+//            intent.putExtra("rule", "FREQ=YEARLY")
+//            intent.putExtra("endTime", calendarEvent.timeInMillis + 60 * 60 * 1000)
+//            intent.putExtra("title", "Calendar Event")
+//            startActivity(intent)
 
         }
+
 
 
 }
