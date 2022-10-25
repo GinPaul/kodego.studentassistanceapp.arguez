@@ -7,20 +7,17 @@
     android:background="@drawable/purpletop">
 
 
-<!--    &lt;!&ndash;        app:civ_border_color="#FF000000"&ndash;&gt;-->
-<!--    &lt;!&ndash;        app:civ_border_width="2dp"&ndash;&gt;<![CDATA[-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.05"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.187" />-->
+    <!--    &lt;!&ndash;        app:civ_border_color="#FF000000"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        app:civ_border_width="2dp"&ndash;&gt;<![CDATA[-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.05"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.187" />-->
 
 
-
-
-
-<!--    ]]>-->
+    <!--    ]]>-->
 
     <TextView
         android:id="@+id/textViewHomeName"
@@ -130,10 +127,10 @@
         android:contentDescription="Tabs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSection"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.046"
         app:tabIndicator="@android:color/transparent"
         app:tabIndicatorColor="@android:color/transparent"
         app:tabPaddingEnd="15dp"
@@ -152,15 +149,15 @@
             android:layout_height="wrap_content"
             android:text="@string/text_label_2"
             tools:ignore="TouchTargetSizeCheck"
-            tools:layout_editor_absoluteX="140dp"
-            tools:layout_editor_absoluteY="219dp" />
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="177dp" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="TouchTargetSizeCheck"
-            tools:layout_editor_absoluteX="268dp"
-            tools:layout_editor_absoluteY="231dp" />
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="205dp" />
     </com.google.android.material.tabs.TabLayout>
 
     <TextView
@@ -174,36 +171,36 @@
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabStudApp"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/scheduleCardview"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         app:cardBackgroundColor="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/tvDateToday"
+        app:layout_constraintVertical_bias="0.097">
 
     </androidx.cardview.widget.CardView>
 
     <ImageButton
         android:id="@+id/imgCalendarButton1"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
         android:background="@android:color/transparent"
         android:contentDescription="studentcalendar"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/scheduleCardview"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.014"
         app:srcCompat="@drawable/calendar2"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -211,16 +208,16 @@
         android:id="@+id/tvDateToday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto"
         android:text="Date Today"
-        android:textColor="@color/white"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewHomeName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toEndOf="@+id/textViewHomeName"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toEndOf="@+id/imgCalendarButton1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
