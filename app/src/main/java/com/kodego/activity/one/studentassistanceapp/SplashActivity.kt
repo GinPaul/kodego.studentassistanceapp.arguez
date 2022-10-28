@@ -15,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(3500L)
-            startActivity(Intent(this@SplashActivity, LoginSAv2::class.java))
+            startActivity(Intent(this@SplashActivity, ViewPager::class.java))
             finish()
         }
     }

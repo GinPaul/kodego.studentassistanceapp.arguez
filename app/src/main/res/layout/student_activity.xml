@@ -22,8 +22,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:paddingBottom="14dp">
+            android:layout_margin="0dp"
+            android:paddingBottom="25dp">
 
             <ImageView
                 android:id="@+id/imgSubject"

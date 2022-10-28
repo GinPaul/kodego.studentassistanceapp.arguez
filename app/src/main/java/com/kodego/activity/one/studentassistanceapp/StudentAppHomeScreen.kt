@@ -24,6 +24,25 @@ class StudentAppHomeScreen : AppCompatActivity() {
     lateinit var textView: TextView
     lateinit var button: Button
     lateinit var adapter: SubjectAdapter
+//    private val introSliderAdapter = IntroSliderAdapter(
+//        listOf(
+//            IntroSlide(
+//                "Sunlight",
+//                "Sunlight is the light and energy that comes from the Sun.",
+//                R.drawable.atomphysics
+//            ),
+//            IntroSlide(
+//                "Pay Online",
+//                "Electronic bills payment is a feature of online, mobile and telephone banking.",
+//                R.drawable.biologygene
+//            ),
+//            IntroSlide(
+//                "Video Streaming",
+//                "Streaming media is multimedia that is constantly received by and presented to an end-user.",
+//                R.drawable.maths
+//            )
+//        )
+//    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +60,8 @@ class StudentAppHomeScreen : AppCompatActivity() {
             val intent = Intent(this, StudentCalendar::class.java)
             startActivity(intent)
         }
+
+        //showing current date and time
         textView = findViewById(R.id.tvDateToday)
         calendar = Calendar.getInstance()
         simpleDateFormat = SimpleDateFormat("EEE | MMM dd, yyyy")
@@ -48,13 +69,13 @@ class StudentAppHomeScreen : AppCompatActivity() {
         textView.text = date
 
 
-        //data source
+        //data source using data Class
         var subjectList: MutableList<Subjects> = mutableListOf<Subjects>(
             Subjects(R.drawable.flaskchemistry, 1, "Chemistry 17", "Introduction to Inorganic Chemistry"),
             Subjects(R.drawable.maths, 2, "Math 11", "Advanced Mathematics"),
-            Subjects(R.drawable.atomphysics, 3, "Physics 21", "Quantum Physics"),
-            Subjects(R.drawable.philosophy, 4, "Philosophy 1", "Philosophy"),
-            Subjects(R.drawable.biologygene, 5, "Biology 2", "Molecular Biology"),
+            Subjects(R.drawable.atomphysics, 3, "Physics 21", "Applied Physics"),
+            Subjects(R.drawable.philosophy, 4, "Philosophy 100", "Introduction to Philosophy"),
+            Subjects(R.drawable.biologygene, 5, "Biology 2", "General Biology"),
         )
 
         //pass data source to adapter (need lateinit var adapter)
@@ -73,6 +94,9 @@ class StudentAppHomeScreen : AppCompatActivity() {
 
         binding.cvSubjectsRecylcer.adapter = adapter
         binding.cvSubjectsRecylcer.layoutManager = LinearLayoutManager(this)
+
+//        //Viewpager/introSlide
+//        introSliderViewPager.adapter = introSliderAdapter
 
     }
     fun addCalendarEvent(view: View) {

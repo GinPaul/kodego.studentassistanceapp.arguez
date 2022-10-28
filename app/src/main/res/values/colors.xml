@@ -11,5 +11,10 @@
     <color name="green1">#22A127</color>
     <color name="green2">#0DDA15</color>
     <color name="darkblue">#010D53</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
 
 </resources>
