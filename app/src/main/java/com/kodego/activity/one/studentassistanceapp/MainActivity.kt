@@ -2,10 +2,34 @@ package com.kodego.activity.one.studentassistanceapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import com.kodego.activity.one.studentassistanceapp.databinding.ActivityMainBinding
+import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentAppHomeScreenBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
+    lateinit var calendar: Calendar
+    lateinit var simpleDateFormat: SimpleDateFormat
+    lateinit var date: String
+    lateinit var textView: TextView
+    lateinit var button: Button
+    lateinit var adapter: SubjectAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
+
+        textView = findViewById(R.id.tvDateMain)
+        calendar = Calendar.getInstance()
+        simpleDateFormat = SimpleDateFormat("EEE | MMM dd, yyyy")
+        date = simpleDateFormat.format(calendar.time)
+        textView.text = date
     }
 }
