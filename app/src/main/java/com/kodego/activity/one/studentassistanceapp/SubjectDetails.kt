@@ -48,15 +48,14 @@ class SubjectDetails : AppCompatActivity() {
 
 
         //data from home activity
-        var itemName: String? = intent.getStringExtra("itemName") //>>need to add "?" to accept null inputs/values
-        var itemDescription : String? = intent.getStringExtra("itemDescription")
-        var imageItem: Int = intent.getIntExtra("itemImage",0)
-        var quantity: Int = intent.getIntExtra("quantity",0)
+        var subjectName: String? = intent.getStringExtra("subjectName") //>>need to add "?" to accept null inputs/values
+        var subjectDescription : String? = intent.getStringExtra("subjectDescription")
+        var imageSubject: Int = intent.getIntExtra("imageSubject",0)
+//        var quantity: Int = intent.getIntExtra("quantity",0)
 
-//        binding.imgSubjectDetails.setImageResource()
-
-//        binding.tvMainSubjectDetails.text = itemName
-//        binding.txtDescription2.text = itemDescription
+//        binding.Subject.setImageResource(imageSubject)
+//        binding.tvSubjectName2.text = subjectName
+//        binding.tvSubjectDescription2.text = subjectDescription
 //        binding.tvQuantityProdDetail.text = quantity.toString()
     }
 

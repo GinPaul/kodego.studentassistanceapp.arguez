@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.kodego.activity.one.studentassistanceapp.databinding.StudentActivityBinding
 
-class SubjectAdapter (val products: MutableList<Subjects>): RecyclerView.Adapter<SubjectAdapter.SubjectViewHolder>() {
+class SubjectAdapter (val subjects: MutableList<Subjects>): RecyclerView.Adapter<SubjectAdapter.SubjectViewHolder>() {
 
 
     var onItemClick: ((Subjects) -> Unit)? = null
@@ -24,10 +24,10 @@ class SubjectAdapter (val products: MutableList<Subjects>): RecyclerView.Adapter
 
         //holder.binding.imgProduct.setImageResource() << old method
         holder.binding.apply {
-            imgSubject.setImageResource(products[position].imageSubject)
-            tvSubjectName.text = products[position].subjectName
-            tvSubjectDescription.text = products[position].subjectDescription
-            tvSubjectNumber.text = products[position].subjectNumber.toString()
+            imgSubject.setImageResource(subjects[position].imageSubject)
+            tvSubjectName.text = subjects[position].subjectName
+            tvSubjectDescription.text = subjects[position].subjectDescription
+            tvSubjectNumber.text = subjects[position].subjectNumber.toString()
 //            imgBtnUpdate.setOnClickListener(){
 //                onUpdateButtonClick?.invoke(products[position],position)
 //            }
@@ -36,12 +36,12 @@ class SubjectAdapter (val products: MutableList<Subjects>): RecyclerView.Adapter
 //            }
         }
         holder.itemView.setOnClickListener(){
-            onItemClick?.invoke(products[position])
+            onItemClick?.invoke(subjects[position])
         }
     }
 
     override fun getItemCount(): Int {
-        return products.size
+        return subjects.size
     }
 
 }

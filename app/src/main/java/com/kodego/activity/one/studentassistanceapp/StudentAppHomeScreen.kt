@@ -1,16 +1,14 @@
 package com.kodego.activity.one.studentassistanceapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.kodego.activity.one.studentassistanceapp.databinding.ActivityLoginSav2Binding
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentAppHomeScreenBinding
-import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
