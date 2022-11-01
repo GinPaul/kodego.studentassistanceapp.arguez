@@ -44,7 +44,7 @@
         android:padding="8dp"
         android:text="Current Date"
         android:textAlignment="center"
-        android:textColor="@color/darkblue"
+        android:textColor="@color/material_dynamic_neutral20"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"

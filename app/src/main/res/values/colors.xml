@@ -10,11 +10,14 @@
     <color name="red">#E40D0D</color>
     <color name="green1">#22A127</color>
     <color name="green2">#0DDA15</color>
-    <color name="darkblue">#010D53</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF5252</color>
     <color name="colorTextPrimary">#212121</color>
     <color name="colorTextSecondary">#757575</color>
+    <color name="purple_300">#FF47D1</color>
+    <color name="purple_400">#FF2BCA</color>
+    <color name="purple_600">#8F0278</color>
+    <color name="sky_green">#96FBF2</color>
 
 </resources>
