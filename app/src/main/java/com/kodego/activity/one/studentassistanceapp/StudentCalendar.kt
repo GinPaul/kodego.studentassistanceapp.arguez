@@ -1,19 +1,13 @@
 package com.kodego.activity.one.studentassistanceapp
 
-import android.content.ContentUris
-import android.content.ContentValues
 import android.content.Intent
-import android.database.Cursor
-import android.net.Uri
 import android.os.Bundle
 import android.provider.CalendarContract
-import android.util.Log
 import android.view.View
 import android.widget.CalendarView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentAppHomeScreenBinding
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentCalendarBinding
 import java.util.*
 
@@ -21,7 +15,6 @@ import java.util.*
 class StudentCalendar : AppCompatActivity() {
     lateinit var binding: ActivityStudentCalendarBinding
 
-    // on below line we are creating
     // variables for text view and calendar view
     lateinit var dateTV: TextView
     lateinit var calendarView: CalendarView
@@ -49,12 +42,9 @@ class StudentCalendar : AppCompatActivity() {
 //    private val PROJECTION_OWNER_ACCOUNT_INDEX: Int = 3
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         binding = ActivityStudentCalendarBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.btnAddSchedule.setOnClickListener() {
             Toast.makeText(applicationContext, "Opening event scheduler...", Toast.LENGTH_SHORT)

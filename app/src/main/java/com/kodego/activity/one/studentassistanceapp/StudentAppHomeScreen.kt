@@ -22,25 +22,6 @@ class StudentAppHomeScreen : AppCompatActivity() {
     lateinit var textView: TextView
     lateinit var button: Button
     lateinit var adapter: SubjectAdapter
-//    private val introSliderAdapter = IntroSliderAdapter(
-//        listOf(
-//            IntroSlide(
-//                "Sunlight",
-//                "Sunlight is the light and energy that comes from the Sun.",
-//                R.drawable.atomphysics
-//            ),
-//            IntroSlide(
-//                "Pay Online",
-//                "Electronic bills payment is a feature of online, mobile and telephone banking.",
-//                R.drawable.biologygene
-//            ),
-//            IntroSlide(
-//                "Video Streaming",
-//                "Streaming media is multimedia that is constantly received by and presented to an end-user.",
-//                R.drawable.maths
-//            )
-//        )
-//    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
