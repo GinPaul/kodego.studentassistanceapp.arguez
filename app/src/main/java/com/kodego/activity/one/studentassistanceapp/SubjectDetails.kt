@@ -47,16 +47,31 @@ class SubjectDetails : AppCompatActivity() {
         btnSubject.setImageResource(R.drawable.ic_pink_subject)
 
 
-        //data from home activity
+//        //data from home activity
         var subjectName: String? = intent.getStringExtra("subjectName") //>>need to add "?" to accept null inputs/values
         var subjectDescription : String? = intent.getStringExtra("subjectDescription")
         var imageSubject: Int = intent.getIntExtra("imageSubject",0)
-//        var quantity: Int = intent.getIntExtra("quantity",0)
+////        var quantity: Int = intent.getIntExtra("quantity",0)
+//
+////        binding.Subject.setImageResource(imageSubject)
+////        binding.tvSubjectName2.text = subjectName
+////        binding.tvSubjectDescription2.text = subjectDescription
+////        binding.tvQuantityProdDetail.text = quantity.toString()
 
-//        binding.Subject.setImageResource(imageSubject)
-//        binding.tvSubjectName2.text = subjectName
-//        binding.tvSubjectDescription2.text = subjectDescription
-//        binding.tvQuantityProdDetail.text = quantity.toString()
+        //passing data to fragment 1 (subject frag)
+        var bundleSubjectDetails = Bundle()
+        bundleSubjectDetails.putString("subjectName", subjectName)
+        subjectFrag.arguments = bundleSubjectDetails
+
+        var bundleSubjectDescription = Bundle()
+        bundleSubjectDescription.putString("subjectDescription", subjectDescription)
+        subjectFrag.arguments = bundleSubjectDescription
+
+//        var bundleImageSubject = Bundle()
+//        bundleImageSubject.putString("imageSubject", imageSubject.toString())
+//        subjectFrag.arguments = bundleImageSubject
+
+
     }
 
     fun addFragOnClick(view: View) {

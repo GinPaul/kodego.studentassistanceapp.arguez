@@ -14,21 +14,24 @@
             android:id="@+id/tvSubjectName2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
             android:hint="Subject Name"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.156" />
 
         <ImageButton
             android:id="@+id/imgSubject2"
-            android:layout_width="269dp"
-            android:layout_height="260dp"
-            android:layout_marginTop="24dp"
-            android:scaleType="centerCrop"
+            android:layout_width="405dp"
+            android:layout_height="369dp"
+            android:layout_marginTop="48dp"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubjectName2"
             tools:ignore="SpeakableTextPresentCheck"
@@ -38,12 +41,13 @@
             android:id="@+id/tvSubjectDescription2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
             android:hint="Subject Description"
             android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgSubject2" />
+            app:layout_constraintTop_toBottomOf="@+id/imgSubject2"
+            app:layout_constraintVertical_bias="0.152" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
