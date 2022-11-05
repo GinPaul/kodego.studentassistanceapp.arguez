@@ -34,10 +34,18 @@ class SubjectDetails : AppCompatActivity() {
         setContentView(binding.root)
 
         /**set find id view*/
+//        binding.subjectDetails.setOnClickListener(){
+//
+//        }
+        
         btnSubject = findViewById(R.id.subjectDetails)
+//        binding.assignments
         btnAssignment = findViewById(R.id.assignments)
+//        binding.notes
         btnNotes = findViewById(R.id.notes)
+//        binding.announcements
         btnAnnouncement = findViewById(R.id.announcements)
+//        binding.syllabus
         btnSyllabus = findViewById(R.id.syllabus)
 
         /**set the First Fragment*/
@@ -52,11 +60,7 @@ class SubjectDetails : AppCompatActivity() {
         var subjectDescription : String? = intent.getStringExtra("subjectDescription")
         var imageSubject: Int = intent.getIntExtra("imageSubject",0)
 ////        var quantity: Int = intent.getIntExtra("quantity",0)
-//
-////        binding.Subject.setImageResource(imageSubject)
-////        binding.tvSubjectName2.text = subjectName
-////        binding.tvSubjectDescription2.text = subjectDescription
-////        binding.tvQuantityProdDetail.text = quantity.toString()
+
 
         //passing data to fragment 1 (subject frag)
         var bundleSubjectDetails = Bundle()
@@ -66,10 +70,6 @@ class SubjectDetails : AppCompatActivity() {
         var bundleSubjectDescription = Bundle()
         bundleSubjectDescription.putString("subjectDescription", subjectDescription)
         subjectFrag.arguments = bundleSubjectDescription
-
-//        var bundleImageSubject = Bundle()
-//        bundleImageSubject.putString("imageSubject", imageSubject.toString())
-//        subjectFrag.arguments = bundleImageSubject
 
 
     }
