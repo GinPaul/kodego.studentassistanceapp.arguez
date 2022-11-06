@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.kodego.activity.one.studentassistanceapp.R
 import com.kodego.activity.one.studentassistanceapp.databinding.FragmentSubjectBinding
 
 private const val ARG_PARAM1 = "param1"
@@ -17,7 +18,6 @@ class SubjectFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -32,14 +32,15 @@ class SubjectFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentSubjectBinding.inflate(layoutInflater)
+        /**Inflate the layout for this fragment. Deleting this will ruin the layout!*/
+        return inflater.inflate(R.layout.fragment_subject, container, false)
 
 //        var textFromParent = arguments?.getString("data1")
         var subjectName: String? = arguments?.getString("subjectName")
         var subjectDescription : String? = arguments?.getString("subjectDescription")
         var imageSubject: Int? = arguments?.getInt("imageSubject",0)
 
-        //catching data from tha activity
+        /**catching data from tha activity*/
         binding.tvSubjectName2.text = subjectName
         binding.tvSubjectDescription2.text = subjectDescription
 
