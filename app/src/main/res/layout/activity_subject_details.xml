@@ -32,7 +32,8 @@
             android:layout_marginEnd="5dp"
             android:background="#96FBF2"
             android:onClick="addFragOnClick"
-            android:src="@drawable/ic_pink_subject" />
+            android:src="@drawable/ic_pink_subject"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/assignments"
@@ -42,7 +43,8 @@
             android:layout_marginEnd="5dp"
             android:background="#96FBF2"
             android:onClick="addFragOnClick"
-            android:src="@drawable/ic_baseline_assignment_24" />
+            android:src="@drawable/ic_baseline_assignment_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/notes"
@@ -53,7 +55,8 @@
             android:layout_marginEnd="5dp"
             android:background="#96FBF2"
             android:onClick="addFragOnClick"
-            android:src="@drawable/ic_blue_notes_24" />
+            android:src="@drawable/ic_blue_notes_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/announcements"
@@ -63,7 +66,8 @@
             android:layout_marginEnd="5dp"
             android:background="#96FBF2"
             android:onClick="addFragOnClick"
-            android:src="@drawable/ic_announce_blu_24" />
+            android:src="@drawable/ic_announce_blu_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/syllabus"
@@ -73,7 +77,8 @@
             android:layout_marginEnd="5dp"
             android:background="#96FBF2"
             android:onClick="addFragOnClick"
-            android:src="@drawable/ic_baseline_list_alt_24" />
+            android:src="@drawable/ic_baseline_list_alt_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
