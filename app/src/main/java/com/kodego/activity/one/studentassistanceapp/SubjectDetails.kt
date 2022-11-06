@@ -3,7 +3,6 @@ package com.kodego.activity.one.studentassistanceapp
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivitySubjectDetailsBinding
@@ -61,7 +60,6 @@ class SubjectDetails : AppCompatActivity() {
         var imageSubject: Int = intent.getIntExtra("imageSubject",0)
 ////        var quantity: Int = intent.getIntExtra("quantity",0)
 
-
         //passing data to fragment 1 (subject frag)
         var bundleSubjectDetails = Bundle()
         bundleSubjectDetails.putString("subjectName", subjectName)
@@ -80,7 +78,7 @@ class SubjectDetails : AppCompatActivity() {
         manger = fragmentManger.beginTransaction()
         when(view){
             btnSubject -> {
-                Toast.makeText(applicationContext, "Subject details", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(applicationContext, "Subject details", Toast.LENGTH_SHORT).show()
                 manger.replace(R.id.myView,subjectFrag)
                     .commit()
                 btnSubject.setImageResource(R.drawable.ic_pink_subject)
@@ -90,7 +88,7 @@ class SubjectDetails : AppCompatActivity() {
                 btnSyllabus.setImageResource(R.drawable.ic_baseline_list_alt_24)
             }
             btnSyllabus -> {
-                Toast.makeText(applicationContext, "Syllabus", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(applicationContext, "Syllabus", Toast.LENGTH_SHORT).show()
                 manger.replace(R.id.myView,syllabusFrag)
                     .commit()
                 btnSubject.setImageResource(R.drawable.ic_subject_book_24)
@@ -100,7 +98,7 @@ class SubjectDetails : AppCompatActivity() {
                 btnSyllabus.setImageResource(R.drawable.ic_pink_syllabus_24)
             }
             btnAssignment -> {
-                Toast.makeText(applicationContext, "Assignments", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(applicationContext, "Assignments", Toast.LENGTH_SHORT).show()
                 manger.replace(R.id.myView,assignmentFrag)
                     .commit()
                 btnSubject.setImageResource(R.drawable.ic_subject_book_24)
@@ -110,7 +108,7 @@ class SubjectDetails : AppCompatActivity() {
                 btnSyllabus.setImageResource(R.drawable.ic_baseline_list_alt_24)
             }
             btnNotes -> {
-                Toast.makeText(applicationContext, "Notes", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(applicationContext, "Notes", Toast.LENGTH_SHORT).show()
                 manger.replace(R.id.myView,notesFrag)
                     .commit()
                 btnSubject.setImageResource(R.drawable.ic_subject_book_24)
@@ -120,7 +118,7 @@ class SubjectDetails : AppCompatActivity() {
                 btnSyllabus.setImageResource(R.drawable.ic_baseline_list_alt_24)
             }
             btnAnnouncement -> {
-                Toast.makeText(applicationContext, "Announcements", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(applicationContext, "Announcements", Toast.LENGTH_SHORT).show()
                 manger.replace(R.id.myView,announcementFrag)
                     .commit()
                 btnSubject.setImageResource(R.drawable.ic_subject_book_24)

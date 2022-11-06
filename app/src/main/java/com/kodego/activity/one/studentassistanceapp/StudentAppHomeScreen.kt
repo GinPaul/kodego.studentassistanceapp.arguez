@@ -50,6 +50,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         //step 4: create functionality for the calendar/first button:
+        /**Calendar*/
         binding.imgCalendarButton1.setOnClickListener() {
             Toast.makeText(applicationContext, "Opening calendar...", Toast.LENGTH_SHORT).show()
 

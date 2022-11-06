@@ -35,13 +35,13 @@ class SubjectFragment : Fragment() {
         binding = FragmentSubjectBinding.inflate(layoutInflater)
 
 //        var textFromParent = arguments?.getString("data1")
-        var subjectName2: String? = arguments?.getString("subjectName")
-        var subjectDescription2 : String? = arguments?.getString("subjectDescription")
+        var subjectName: String? = arguments?.getString("subjectName")
+        var subjectDescription : String? = arguments?.getString("subjectDescription")
         var imageSubject: Int? = arguments?.getInt("imageSubject",0)
 
         //catching data from tha activity
-        binding.tvSubjectName2.text = subjectName2
-        binding.tvSubjectDescription2.text = subjectDescription2
+        binding.tvSubjectName2.text = subjectName
+        binding.tvSubjectDescription2.text = subjectDescription
 
         return binding.root
     }
