@@ -1,11 +1,10 @@
 package com.kodego.activity.one.studentassistanceapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityMainBinding
-import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentAppHomeScreenBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -21,9 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         textView = findViewById(R.id.tvDateMain)

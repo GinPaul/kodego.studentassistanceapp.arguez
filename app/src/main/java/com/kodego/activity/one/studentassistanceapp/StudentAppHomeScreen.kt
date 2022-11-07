@@ -80,7 +80,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
         adapter.onItemClick = {
             Toast.makeText(applicationContext, it.subjectName, Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, SubjectDetails::class.java)
+            val intent = Intent(this, SubjectDetails2::class.java)
             intent.putExtra("subjectName", it.subjectName)
             intent.putExtra("subjectDescription", it.subjectDescription)
             intent.putExtra("imageSubject", it.imageSubject)
@@ -88,7 +88,6 @@ class StudentAppHomeScreen : AppCompatActivity() {
             startActivity(intent) //>>don't place "finish" so that the can go back the product list
 
         }
-
         binding.cvSubjectsRecylcer.adapter = adapter
         binding.cvSubjectsRecylcer.layoutManager = LinearLayoutManager(this)
 

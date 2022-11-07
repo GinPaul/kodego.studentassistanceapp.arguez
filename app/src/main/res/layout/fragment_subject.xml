@@ -16,30 +16,28 @@
 
         <TextView
             android:id="@+id/tvSubjectName2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center|left"
             android:hint="Subject Name"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.156" />
+            app:layout_constraintTop_toBottomOf="@+id/imgSubject2" />
 
         <ImageButton
             android:id="@+id/imgSubject2"
-            android:layout_width="405dp"
+            android:layout_width="0dp"
             android:layout_height="369dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="72dp"
             android:foregroundGravity="center"
             android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSubjectName2"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
             tools:ignore="SpeakableTextPresentCheck"
             tools:src="@tools:sample/avatars" />
 
@@ -47,15 +45,12 @@
             android:id="@+id/tvSubjectDescription2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:hint="Subject Description"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgSubject2"
-            app:layout_constraintVertical_bias="0.152" />
+            app:layout_constraintStart_toStartOf="@+id/tvSubjectName2"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubjectName2" />
 
         <TextView
             android:id="@+id/textView7"
@@ -86,15 +81,5 @@
             android:orientation="vertical"
             app:layout_constraintGuide_end="391dp" />
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            android:visibility="invisible"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
