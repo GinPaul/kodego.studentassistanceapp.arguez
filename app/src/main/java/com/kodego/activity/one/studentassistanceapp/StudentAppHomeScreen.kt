@@ -69,10 +69,10 @@ class StudentAppHomeScreen : AppCompatActivity() {
         //data source using data Class
         var subjectList: MutableList<Subjects> = mutableListOf<Subjects>(
             Subjects(R.drawable.inorganichemistry2, 1, "Chemistry 17", "Fundamentals of Inorganic Chemistry"),
-            Subjects(R.drawable.maths, 2, "Math 11", "Advanced Mathematics"),
-            Subjects(R.drawable.atomphysics, 3, "Physics 21", "Applied Physics"),
-            Subjects(R.drawable.philosophy, 4, "Philosophy 100", "Introduction to Philosophy"),
-            Subjects(R.drawable.biologygene, 5, "Biology 2", "General Biology"),
+            Subjects(R.drawable.mathpic, 2, "Math 11", "Advanced Mathematics"),
+            Subjects(R.drawable.physicsball, 3, "Physics 21", "Applied Physics"),
+            Subjects(R.drawable.libliterature, 4, "Philosophy 100", "Introduction to Philosophy"),
+            Subjects(R.drawable.biologyplantladybug, 5, "Biology 2", "General Biology"),
         )
 
         //pass data source to adapter (need lateinit var adapter)
@@ -88,7 +88,6 @@ class StudentAppHomeScreen : AppCompatActivity() {
             startActivity(intent) //>>don't place "finish" so that the can go back the product list
 
         }
-
         binding.cvSubjectsRecylcer.adapter = adapter
         binding.cvSubjectsRecylcer.layoutManager = LinearLayoutManager(this)
 
@@ -125,6 +124,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
 //        binding.btnGallery.setOnClickListener(){
 //            showGallery() //<< create a function showGallery
 //        }
+
 
     }
     private fun showCamera() {

@@ -30,6 +30,7 @@ class SubjectDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //do this in fragments
         binding = ActivitySubjectDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -69,6 +70,15 @@ class SubjectDetails : AppCompatActivity() {
         var bundleSubjectDescription = Bundle()
         bundleSubjectDescription.putString("subjectDescription", subjectDescription)
         subjectFrag.arguments = bundleSubjectDescription
+
+        var bundleSubjectImage = Bundle()
+        bundleSubjectImage.putInt("imageSubject", imageSubject)
+        subjectFrag.arguments = bundleSubjectImage
+
+        //pass the data to Subject Details view upon click in the recycler view of home activity
+//        binding.imgOfSubjectInSubjectDetailsView.setImageResource(imageSubject)
+//        binding.tvSubject.text = subjectName
+//        binding.tvDescriptionInSubjectDetailsView2.text = subjectDescription
 
 
     }

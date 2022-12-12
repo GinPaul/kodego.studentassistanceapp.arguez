@@ -1,9 +1,9 @@
 package com.kodego.activity.one.studentassistanceapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityLoginSav2Binding
 
 class LoginSAv2 : AppCompatActivity() {
@@ -25,7 +25,7 @@ class LoginSAv2 : AppCompatActivity() {
         val correctUserName: String = "admin"
         val correctPassword: String = "admin123"
 
-        val correctUserName2: String = "Paul_A."
+        val correctUserName2: String = "Paul"
         val correctPassword2: String = "pass123"
 
         if((correctUserName == userName) && (correctPassword == password)){
