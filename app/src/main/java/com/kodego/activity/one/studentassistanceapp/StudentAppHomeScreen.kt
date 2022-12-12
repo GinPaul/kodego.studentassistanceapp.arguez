@@ -68,7 +68,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
 
         //data source using data Class
         var subjectList: MutableList<Subjects> = mutableListOf<Subjects>(
-            Subjects(R.drawable.flaskchemistry, 1, "Chemistry 17", "Introduction to Inorganic Chemistry"),
+            Subjects(R.drawable.inorganichemistry2, 1, "Chemistry 17", "Fundamentals of Inorganic Chemistry"),
             Subjects(R.drawable.maths, 2, "Math 11", "Advanced Mathematics"),
             Subjects(R.drawable.atomphysics, 3, "Physics 21", "Applied Physics"),
             Subjects(R.drawable.philosophy, 4, "Philosophy 100", "Introduction to Philosophy"),

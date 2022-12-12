@@ -29,6 +29,7 @@ class SubjectDetails : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivitySubjectDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

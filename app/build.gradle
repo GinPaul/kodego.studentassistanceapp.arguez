@@ -6,7 +6,6 @@ plugins {
 android {
     namespace 'com.kodego.activity.one.studentassistanceapp'
     compileSdk 32
-    buildToolsVersion "29.0.2"
 
     defaultConfig {
         applicationId "com.kodego.activity.one.studentassistanceapp"
@@ -22,7 +21,6 @@ android {
         viewBinding true
 
     }
-
 
     buildTypes {
         release {
