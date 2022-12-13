@@ -212,69 +212,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
-    <ImageButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btnToAssignFrag"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="32dp"
-        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="3dp"
+        android:text="Go To Others.."
+        android:textColor="?colorOnPrimary"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_baseline_navigate_next_24"
+        app:iconTint="?colorOnPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/alarmNotification"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/inorganichemistry2"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textSkipIntro"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Skip Intro"-->
-    <!--        android:textColor="@color/colorPrimary"-->
-    <!--        android:textSize="14sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.498"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView6"-->
-    <!--        app:layout_constraintVertical_bias="0.917" />-->
-
-    <!--    <com.google.android.material.button.MaterialButton-->
-    <!--        android:id="@+id/buttonNext"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_constraintEnd_toEndOf="parent"-->
-    <!--        android:layout_constraintStart_toStartOf="parent"-->
-    <!--        android:layout_marginBottom="4dp"-->
-    <!--        android:minWidth="110dp"-->
-    <!--        android:text="@string/next"-->
-    <!--        android:textSize="14sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:backgroundTint="@color/colorAccent"-->
-    <!--        app:layout_constraintBottom_toTopOf="@id/textSkipIntro"-->
-    <!--        tools:layout_editor_absoluteX="150dp" />-->
-
-    <!--    <LinearLayout-->
-    <!--        android:id="@+id/indicatorsContainer"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginBottom="4dp"-->
-    <!--        android:gravity="center"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        app:layout_constraintBottom_toTopOf="@id/buttonNext"-->
-    <!--        tools:layout_editor_absoluteX="-16dp" />-->
-
-    <!--    <androidx.viewpager2.widget.ViewPager2-->
-    <!--        android:id="@+id/introSliderViewPager"-->
-    <!--        android:layout_width="405dp"-->
-    <!--        android:layout_height="346dp"-->
-    <!--        android:layout_marginBottom="12dp"-->
-    <!--        android:overScrollMode="never"-->
-    <!--        app:layout_constraintBottom_toTopOf="@id/indicatorsContainer"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_baseline_add_alarm_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

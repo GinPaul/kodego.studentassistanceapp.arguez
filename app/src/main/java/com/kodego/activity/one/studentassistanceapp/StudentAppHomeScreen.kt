@@ -16,6 +16,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
@@ -122,11 +123,11 @@ class StudentAppHomeScreen : AppCompatActivity() {
         }
 
         /**getting image from the internet into the profile image*/
-//        Glide.with(this)
-//            .load(imageKodego)
-////            .override(100,200) //to override the size of the image
-////            .circleCrop() //to circle crop the image
-//            .into(binding.profileImage)
+        Glide.with(this)
+            .load(imageKodego)
+            .override(100,200) //to override the size of the image
+            .circleCrop() //to circle crop the image
+            .into(binding.profileImage)
 
         /**getting image from the gallery*/
 //        binding.btnGallery.setOnClickListener(){
@@ -229,16 +230,6 @@ class StudentAppHomeScreen : AppCompatActivity() {
         intent.putExtra("title", "Calendar Event")
         startActivity(intent)
 
-//        fun addCalendarEvent(view: View) {
-//            val calendarEvent: Calendar = Calendar.getInstance()
-//            val intent = Intent(Intent.ACTION_EDIT)
-//            intent.type = "vnd.android.cursor.item/event"
-//            intent.putExtra("beginTime", calendarEvent.timeInMillis)
-//            intent.putExtra("allDay", true)
-//            intent.putExtra("rule", "FREQ=YEARLY")
-//            intent.putExtra("endTime", calendarEvent.timeInMillis + 60 * 60 * 1000)
-//            intent.putExtra("title", "Calendar Event")
-//            startActivity(intent)
         }
 
 }
