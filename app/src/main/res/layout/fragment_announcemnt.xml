@@ -17,7 +17,7 @@
             android:layout_height="70dp"
             android:background="@drawable/top_shape"
             android:gravity="center"
-            android:text="Notes"
+            android:text="Announcements"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"

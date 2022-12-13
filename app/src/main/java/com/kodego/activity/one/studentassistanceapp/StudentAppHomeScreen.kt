@@ -24,6 +24,7 @@ import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentAppHomeScreenBinding
+import com.kodego.activity.one.studentassistanceapp.notification.TaskNotification
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -97,6 +98,14 @@ class StudentAppHomeScreen : AppCompatActivity() {
             Toast.makeText(applicationContext, "Showing Others...", Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SubjectDetails::class.java)
+            startActivity(intent)
+        }
+
+        //to open notification layout
+        binding.alarmNotification.setOnClickListener() {
+            Toast.makeText(applicationContext, "Create your reminder.", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, TaskNotification::class.java)
             startActivity(intent)
         }
 
