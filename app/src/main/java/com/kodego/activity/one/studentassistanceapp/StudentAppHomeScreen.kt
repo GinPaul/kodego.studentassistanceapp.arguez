@@ -80,7 +80,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
         adapter.onItemClick = {
             Toast.makeText(applicationContext, it.subjectName, Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, SubjectDetails::class.java)
+            val intent = Intent(this, SubjectDetailsV2::class.java)
             intent.putExtra("subjectName", it.subjectName)
             intent.putExtra("subjectDescription", it.subjectDescription)
             intent.putExtra("imageSubject", it.imageSubject)
@@ -90,6 +90,14 @@ class StudentAppHomeScreen : AppCompatActivity() {
         }
         binding.cvSubjectsRecylcer.adapter = adapter
         binding.cvSubjectsRecylcer.layoutManager = LinearLayoutManager(this)
+
+        //transferring view to Assignments & other fragments thru SubjectDetails
+        binding.btnToAssignFrag.setOnClickListener() {
+            Toast.makeText(applicationContext, "Showing Others...", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, SubjectDetails::class.java)
+            startActivity(intent)
+        }
 
         /**for dialog*/
 //        binding.btnCustomDialog.setOnClickListener(){
