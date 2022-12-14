@@ -10,7 +10,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityViewPagerBinding
-import com.kodego.activity.one.studentassistanceapp.signinupfragments.SignInFragment
 
 class ViewPager : AppCompatActivity() {
 
@@ -57,14 +56,14 @@ class ViewPager : AppCompatActivity() {
             if (binding.introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount){
                 binding.introSliderViewPager.currentItem  += 1
             }else{
-                Intent(applicationContext, SignInFragment::class.java).also {
+                Intent(applicationContext, SignInActivity::class.java).also {
                     startActivity(it)
                     finish()
                 }
             }
         }
         binding.textSkipIntro.setOnClickListener{
-            Intent(applicationContext, SignInFragment::class.java).also {
+            Intent(applicationContext, SignInActivity::class.java).also {
                 startActivity(it)
                 finish()
         }

@@ -22,7 +22,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentAssistanceApp"
         tools:targetApi="31">
-
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".notification.TaskNotification"
             android:exported="true">
@@ -30,9 +43,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".SubjectDetailsV2"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -45,7 +59,7 @@
         <!-- </activity> -->
         <activity
             android:name=".SubjectDetails"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -58,7 +72,7 @@
         <!-- </activity> -->
         <activity
             android:name=".StudentCalendar"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -94,7 +108,7 @@
         </activity>
         <activity
             android:name=".StudentAppHomeScreen"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
