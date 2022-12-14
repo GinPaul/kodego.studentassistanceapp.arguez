@@ -23,4 +23,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_email">Enter e-mail</string>
+    <string name="enter_your_pass">Enter password</string>
+    <string name="title_activity_sign_in_sign_up">SignInSignUp</string>
 </resources>

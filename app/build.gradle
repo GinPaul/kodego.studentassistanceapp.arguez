@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -64,4 +65,18 @@ dependencies {
 
     //Material Design
     implementation 'com.google.android.material:material:1.8.0-beta01'
+
+    //for firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //firebase authentication
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+
+
+    //navigation
+    def nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 }

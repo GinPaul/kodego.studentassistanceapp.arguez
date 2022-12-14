@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "175185218112",
+    "project_id": "studentassistanceapp-e2bda",
+    "storage_bucket": "studentassistanceapp-e2bda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175185218112:android:67c2be1a4f9efbf698eda5",
+        "android_client_info": {
+          "package_name": "com.kodego.studentassistanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175185218112-rti9rtluri4gd3i15itq82cpifqdtj7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTue69gMlhU-4zYZR7QP7HBCB0GoUIl80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175185218112-rti9rtluri4gd3i15itq82cpifqdtj7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

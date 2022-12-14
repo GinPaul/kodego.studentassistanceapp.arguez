@@ -1,23 +1,16 @@
 package com.kodego.activity.one.studentassistanceapp
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentAppHomeScreenBinding
-import com.kodego.activity.one.studentassistanceapp.databinding.ActivityStudentCalendarBinding
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityViewPagerBinding
+import com.kodego.activity.one.studentassistanceapp.signinupfragments.SignInFragment
 
 class ViewPager : AppCompatActivity() {
 
@@ -64,14 +57,14 @@ class ViewPager : AppCompatActivity() {
             if (binding.introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount){
                 binding.introSliderViewPager.currentItem  += 1
             }else{
-                Intent(applicationContext, LoginSAv2::class.java).also {
+                Intent(applicationContext, SignInFragment::class.java).also {
                     startActivity(it)
                     finish()
                 }
             }
         }
         binding.textSkipIntro.setOnClickListener{
-            Intent(applicationContext, LoginSAv2::class.java).also {
+            Intent(applicationContext, SignInFragment::class.java).also {
                 startActivity(it)
                 finish()
         }
