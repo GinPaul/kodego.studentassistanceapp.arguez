@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.kodego.activity.one.studentassistanceapp.admin.AdminPage
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivityLoginSav2Binding
 
 class LoginSAv2 : AppCompatActivity() {
@@ -29,7 +30,7 @@ class LoginSAv2 : AppCompatActivity() {
         val correctPassword2: String = "pass123"
 
         if((correctUserName == userName) && (correctPassword == password)){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, AdminPage::class.java)
             intent.putExtra("nameID", userName)
             startActivity(intent)
             finish()

@@ -48,7 +48,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white"
-                    android:hint="@string/type_your_task"
+                    android:hint="Format: (Subject; Details)"
                     android:inputType="textEmailAddress"
                     android:paddingStart="12dp"
                     android:paddingTop="15dp"
