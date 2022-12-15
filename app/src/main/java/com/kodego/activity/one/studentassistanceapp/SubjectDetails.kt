@@ -6,14 +6,19 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.kodego.activity.one.studentassistanceapp.databinding.ActivitySubjectDetailsBinding
-import com.kodego.activity.one.studentassistanceapp.view.*
+import com.kodego.activity.one.studentassistanceapp.fragments.Assignment2Fragment
+import com.kodego.activity.one.studentassistanceapp.view.AnnouncemntFragment
+import com.kodego.activity.one.studentassistanceapp.view.NotesFragment
+import com.kodego.activity.one.studentassistanceapp.view.SubjectFragment
+import com.kodego.activity.one.studentassistanceapp.view.SyllabusFragment
 
+//holder of assignment and other fragments:
 class SubjectDetails : AppCompatActivity() {
 
     lateinit var binding: ActivitySubjectDetailsBinding
     private val fragmentManger = supportFragmentManager
     private val subjectFrag = SubjectFragment()
-    private val assignmentFrag = AssignmentFragment()
+    private val assignmentFrag = Assignment2Fragment()
     private val notesFrag = NotesFragment()
     private val announcementFrag = AnnouncemntFragment()
     private val syllabusFrag = SyllabusFragment()
@@ -35,11 +40,8 @@ class SubjectDetails : AppCompatActivity() {
         setContentView(binding.root)
 
         /**set find id view*/
-//        binding.subjectDetails.setOnClickListener(){
-//
-//        }
-        
-//        btnSubject = findViewById(R.id.subjectDetails)
+//        removed the subject details fragment
+
 //        binding.assignments
         btnAssignment = findViewById(R.id.assignments)
 //        binding.notes
@@ -50,41 +52,10 @@ class SubjectDetails : AppCompatActivity() {
         btnSyllabus = findViewById(R.id.syllabus)
 
         /**set the First Fragment*/
-//        manger = fragmentManger.beginTransaction()
-//            .replace(R.id.myView,subjectFrag)
-//        manger.commit()
-//        btnSubject.setImageResource(R.drawable.ic_pink_subject)
-
-        //set new first fragment
         manger = fragmentManger.beginTransaction()
             .replace(R.id.myView,assignmentFrag)
         manger.commit()
         btnAssignment.setImageResource(R.drawable.ic_pink_assignment_24)
-
-
-////        //data from home activity
-//        var subjectName: String? = intent.getStringExtra("subjectName") //>>need to add "?" to accept null inputs/values
-//        var subjectDescription : String? = intent.getStringExtra("subjectDescription")
-//        var imageSubject: Int = intent.getIntExtra("imageSubject",0)
-//////        var quantity: Int = intent.getIntExtra("quantity",0)
-//
-//        //passing data to fragment 1 (subject frag)
-//        var bundleSubjectDetails = Bundle()
-//        bundleSubjectDetails.putString("subjectName", subjectName)
-//        subjectFrag.arguments = bundleSubjectDetails
-//
-//        var bundleSubjectDescription = Bundle()
-//        bundleSubjectDescription.putString("subjectDescription", subjectDescription)
-//        subjectFrag.arguments = bundleSubjectDescription
-//
-//        var bundleSubjectImage = Bundle()
-//        bundleSubjectImage.putInt("imageSubject", imageSubject)
-//        subjectFrag.arguments = bundleSubjectImage
-
-        //pass the data to Subject Details view upon click in the recycler view of home activity
-//        binding.img.setImageResource(imageSubject)
-//        binding.tvSubjectName2.text = subjectName
-//        binding.tvDescriptionInSubjectDetailsView2.text = subjectDescription
 
 
     }
@@ -132,6 +103,8 @@ class SubjectDetails : AppCompatActivity() {
             }
         }
     }
+
+
 
 
 }

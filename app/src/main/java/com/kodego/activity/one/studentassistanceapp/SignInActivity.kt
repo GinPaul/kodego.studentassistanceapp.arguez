@@ -61,6 +61,7 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 
+    //function not used
     private fun init(view: View) {
         mAuth = FirebaseAuth.getInstance()
     }

@@ -95,7 +95,7 @@ class StudentAppHomeScreen : AppCompatActivity() {
 
         //transferring view to Assignments & other fragments thru SubjectDetails
         binding.btnToAssignFrag.setOnClickListener() {
-            Toast.makeText(applicationContext, "Showing Others...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "Showing Assignments..", Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SubjectDetails::class.java)
             startActivity(intent)

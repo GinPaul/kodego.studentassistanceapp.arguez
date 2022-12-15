@@ -4,19 +4,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.kodego.activity.one.studentassistanceapp.databinding.StudentActivityBinding
-import com.kodego.activity.one.studentassistanceapp.view.*
 
 class SubjectAdapter (val subjects: MutableList<Subjects>): RecyclerView.Adapter<SubjectAdapter.SubjectViewHolder>() {
 
     var onItemClick: ((Subjects) -> Unit)? = null
     var onUpdateButtonClick: ((Subjects, Int) -> Unit)? = null
     var onDeleteButtonClick: ((Subjects, Int) -> Unit)? = null
-
-    private val subjectFrag = SubjectFragment()
-    private val assignmentFrag = AssignmentFragment()
-    private val notesFrag = NotesFragment()
-    private val announcementFrag = AnnouncemntFragment()
-    private val syllabusFrag = SyllabusFragment()
 
     inner class SubjectViewHolder(val binding: StudentActivityBinding): RecyclerView.ViewHolder(binding.root)
 
