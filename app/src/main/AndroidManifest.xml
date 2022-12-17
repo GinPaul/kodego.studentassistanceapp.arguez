@@ -23,7 +23,7 @@
         android:theme="@style/Theme.StudentAssistanceApp"
         tools:targetApi="31">
         <activity
-            android:name=".AdminPage"
+            android:name=".admin.AdminPage"
             android:exported="false"
             android:label="@string/title_activity_admin_page"
             android:theme="@style/Theme.StudentAssistanceApp.NoActionBar">
@@ -32,7 +32,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".TaskAdapterforFragmentsFirebase"
+            android:name=".TaskAdapterForFragments"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
